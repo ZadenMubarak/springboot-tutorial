@@ -12,7 +12,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index(){
-        System.out.println("RUNNING HOME CTRLER");
+        System.out.println("Appname "+appNAme);
         return "index.html";
     }
 
