@@ -1,15 +1,24 @@
 package org.example.store;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+
+    @Value("${spring.application.name}")
+    private String appNAme;
+
     @RequestMapping("/")
     public String index(){
-        //send request to root of the site
         System.out.println("RUNNING HOME CTRLER");
         return "index.html";
     }
+
+//    @RequestMapping("/next")
+//    public String next(){
+//        return "next.html";
+//    }
 }
 
