@@ -12,7 +12,7 @@ public class OrderService {
 
         var paymentServive = new StripePaymentService();
         paymentServive.processPayment(10);
-
+        
     }
 
     public void cancelOrder(){}
